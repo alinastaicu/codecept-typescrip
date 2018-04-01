@@ -1,0 +1,18 @@
+{
+  "bootstrap": "server.typescript.js",
+  "tests": "src/**/*.test.ts",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost",
+      "browser": "chrome",
+      "restart": true
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "mocha": {},
+  "name": "codecept"
+}

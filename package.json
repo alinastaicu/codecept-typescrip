@@ -1,0 +1,22 @@
+{
+  "name": "codecept",
+  "version": "1.0.0",
+  "main": "steps_file.js",
+  "scripts": {
+    "lint": "./node_modules/tslint/bin/tslint './src/**/*.ts'",
+    "test": "codeceptjs run --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/webdriverio": "^4.10.1",
+    "codeceptjs": "^1.1.7",
+    "selenium-standalone": "^6.13.0",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "tslint-eslint-rules": "^5.1.0",
+    "typescript": "^2.8.1",
+    "webdriverio": "^4.12.0"
+  }
+}
