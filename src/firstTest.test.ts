@@ -1,8 +1,10 @@
+import {googlePage} from 'pageObjects';
+
 Feature('WHEN testing google');
 
-Scenario('WHEN I want to search check24 on google', (I) => {
-  I.amOnPage('https://www.google.de');
-  I.fillField('q', 'check24');
-  I.click('btnK');
-  I.see('CHECK24 - Versicherungen, Kredit, Strom, DSL & Reisen im Vergleich', '.g .r a');
+Scenario('WHEN I search "check24"', async (I) => {
+  const g = googlePage(I);
+  await g.gotoSearchPage();
+  await g.searchText('check24');
+  I.see('CHECK24 - Versicherungen, Kredit, Strom, DSL & Reisen im Vergleich', g.firstLink);
 });
