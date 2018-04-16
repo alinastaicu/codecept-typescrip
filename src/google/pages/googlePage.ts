@@ -1,6 +1,6 @@
 export const googlePage = (I: CodeceptJS.I) => {
   return new class GogolePage {
-    public firstLink = {css: '.g .r a:first-child'};
+    public firstResult = {css: '.g .r a:first-child'};
 
     public gotoSearchPage = () => I.amOnPage('https://www.google.de');
 
